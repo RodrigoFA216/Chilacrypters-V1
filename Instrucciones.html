@@ -27,7 +27,7 @@
             
             <nav>
                 <a href="/Inicio.html">Inicio</a>
-                <a href="/Instrucciones.html">Instrucciones</a>
+                <a href="/Instrucciones.html" class="active">Instrucciones</a>
                 <a href="/index.html">Compilador</a>
                 <a href="/contacto.html">Contacto</a>
             </nav>
@@ -81,8 +81,8 @@
     <!--script personalizado-->
     <script>
         $('ul li').on('click', function(){
-        $('li').removeClass('active');
-        $(this).addClass('active');
+            $('li').removeClass('active');
+            $(this).addClass('active');
         });
     </script>
 
@@ -180,6 +180,12 @@
             max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
             margin:auto; /* Centramos los elementos */
             overflow:hidden; /* Eliminamos errores de float */
+        }
+        .wrapper nav a.active{
+            background:#8A3E5B;
+            border-radius:50px;
+            text-decoration: none;
+            color: #E1E3F0;
         }
 
         header .logo {
